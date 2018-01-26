@@ -19,7 +19,7 @@ function draw() {
 
   // largest circle grows according to hour
   fill('#73AC61');
-  change = map(hour(), 0, 14, 240, 400)
+  change = map(hour(), 0, 23, 240, 400)
   ellipse(240, 240, change, change);
 
   // a constant circle to frame the face
