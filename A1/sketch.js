@@ -2,9 +2,6 @@ function setup() {
   createCanvas(640, 480);
 }
 
-// hour()     0-23
-// minute()   0-59
-
 function draw() {
   var change;
 
