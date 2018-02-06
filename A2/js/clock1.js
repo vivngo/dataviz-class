@@ -7,9 +7,15 @@ var bkgrd_color = 'rgba(27,103,107,1)';
 function setup() {
   createCanvas(640, 640);
   background(bkgrd_color);
+  textSize(16);
+  textAlign(CENTER);
+  fill('rgba(190,242,2,0.75)');
+  text("loading...", 320, 320);
+
   frameRate(1);            // 1 FPS
   stroke(bkgrd_color);
   angleMode(DEGREES);
+  textAlign(LEFT);
 
   //populate arrays for flower, leaf coordinates
   for (var i = 0; i < 60; i++) {
@@ -25,11 +31,11 @@ function setup() {
 function draw() {
   background(bkgrd_color);
 
-  for (var i = 0; i <= second(); i++) {
+  for (var i = 0; i < second(); i++) {
     drawLeaf(sec_xs[i], sec_ys[i], sec_angles[i], i%leaf_colors.length);
   }
 
-  for (var i = 0; i <= minute(); i++) {
+  for (var i = 0; i < minute(); i++) {
     drawFlower(min_xs[i], min_ys[i], min_angles[i], hour(), i%flower_colors.length);
   }
 
@@ -78,7 +84,6 @@ function twoDigits(number) {
 function showTime() {
   rectMode(CORNER);
   fill('rgba(27,103,107,0.5)');
-  // fill('red');
   rect(20, 570, 70, 50);
 
   var time = '';
