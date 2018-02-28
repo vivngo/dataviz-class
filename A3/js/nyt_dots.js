@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(960, 500);
+  createCanvas(1080, 500);
   background(50);
 
   console.log(nytResponse);

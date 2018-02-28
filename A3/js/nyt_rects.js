@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 1200);
+  createCanvas(640, 1500);
   background(50);
   textFont(nytFont);
 
