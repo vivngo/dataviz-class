@@ -1,4 +1,4 @@
-var map = L.map('map').setView([38, -97], 5);
+var map = L.map('map').setView([38, -97], 4);
 
 // Adding Voyager Basemap from CARTO
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png', {
