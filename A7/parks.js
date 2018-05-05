@@ -70,23 +70,23 @@ const npsCentroidsStyle = new carto.style.CartoCSS(`
   }
   #layer [ozone_exceed_days_2017 <= 80] {   // 40-80
     marker-width: 40;
-    marker-fill: #6A1311;
+    marker-fill: #6B3E31;
   }
   #layer [ozone_exceed_days_2017 <= 40] {   // 21-40
     marker-width: 35;
-    marker-fill: #E44D32;
+    marker-fill: #C2573B;
   }
   #layer [ozone_exceed_days_2017 <= 20] {   // 11-20
     marker-width: 30;
-    marker-fill: #F5AF42;
+    marker-fill: #DD814E;
   }
   #layer [ozone_exceed_days_2017 <= 10] {   // 5-10
     marker-width: 25;
-    marker-fill: #FAE668;
+    marker-fill: #EBB266;
   }
   #layer [ozone_exceed_days_2017 <= 4] {   // 1-4
     marker-width: 18;
-    marker-fill: #B4CEE8;
+    marker-fill: #FBE581;
   }
   #layer::labels {
     text-name: [ozone_exceed_days_2017];
